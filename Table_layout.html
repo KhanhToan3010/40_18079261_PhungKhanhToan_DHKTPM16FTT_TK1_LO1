@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table_layout</title>
+</head>
+<style>
+    table {
+  table-layout: fixed;
+  width: 1120px;
+  height: 700px;
+  border: 1px solid red;
+}
+
+td {
+  border: 1px solid blue;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+</style>
+<body>
+    <table>
+        <tr>
+          <td colspan="2">top menu</td> 
+        </tr>
+        <tr>
+          <td>Header</td> 
+          <td> 
+            <table>
+              <tr>
+                <td colspan="2">menu left</td>
+                <td colspan="2">contend</td>
+              </tr>
+             
+            </table>
+          </td>
+        </tr>
+        <tr>
+            <td colspan="2">Footer</td>
+            
+          </tr>
+      </table>
+</body>
+</html>
